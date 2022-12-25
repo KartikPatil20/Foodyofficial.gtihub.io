@@ -1,0 +1,1206 @@
+/*css reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+@media
+
+/*(min-width:300px) and*/
+(max-width: 944px) {
+    /*{
+        animation-name: kartik;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes kartik {
+        0% {
+            width: 50%;
+            animation-fill-mode: forwards;
+            background-color: rgb(215, 128, 255);
+        }
+        50% {
+            width: 70%;
+            animation-fill-mode: forwards;
+            background-color: rgb(194, 131, 202);
+        }
+        100% {
+            width: 80%;
+            animation-fill-mode: forwards;
+            background-color: rgb(119, 69, 111);
+        }
+    }*/
+
+    html {
+        scroll-behavior: smooth;
+        background-color: #8d658d;
+        
+    }
+    #navbar {
+        display: flex;
+        align-items: center;
+        margin-top: 0%;
+    }
+
+    #navbar {
+        position: fixed;
+        width: 100%;
+        height: 8%;
+    }
+
+    /* logo and image*/
+    #logo {
+        margin: 0% 0% 0% -1%;
+    }
+
+    #logo img {
+        height: 65px;
+        margin: 0px 7px;
+    }
+
+    #navbar ul {
+        display: flex;
+        color: black;
+        position: sticky;
+    }
+
+    #navbar::before {
+        content: '';
+        background: black;
+        position: absolute;
+        height: 85%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        top: 0%;
+        bottom: 0%;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-style: 15px;
+        font-family: 'Bree Serif', serif;
+        cursor: pointer;
+    }
+
+    #navbar ul li a {
+        display: block;
+        padding: 0px 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        border-bottom-style: solid;
+    }
+
+    a {
+        color: white;
+    }
+
+    #navbar ul li a:hover {
+        color: grey;
+        background-color: white;
+    }
+
+    /* HOME SECTION*/
+    #home .heading {
+        font-size: 1.8rem;
+        padding: 12px;
+        color: black;
+    }
+
+    #home hr{
+        animation: kartik1 3.5s 1;
+    }
+        @keyframes kartik1 {
+            0%{
+                width: 0%;
+            }
+            
+            100%{
+                width: 80%;
+            }
+        }
+    
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 2% 13%;
+        justify-content: center;
+        align-items: center;
+        height: 430px;
+        width: 100%;
+        font-family: 'Bree Serif', serif;
+
+    }
+
+    /*#home::before {
+        content: '';
+        background: linear-gradient(92deg, #1f9db3, rgb(237 184 184));
+        position: absolute;
+        height: 45%;
+        width: 126%;
+        z-index: -1;
+        opacity: 0.8;
+        top: 0%;
+        bottom: 0%;
+        overflow: overlay;
+    }*/
+
+    /* Services Section*/
+
+    #services {
+        margin: 1% 5% 1% 3%;
+        display: list-item;
+        font-family: 'Bree Serif', serif;
+        overflow: overlay;
+    }
+
+    #service-container {
+        width: 126%;
+        margin: 5% 0%;
+    }
+
+    /*#service-container::before {
+        content: '';
+        background: linear-gradient(92deg, #1f9db3, rgb(237 184 184));
+        position: absolute;
+        width: 126%;
+        height: 126%;
+        z-index: -1;
+        opacity: 0.5;
+    }*/
+
+    #services .box {
+        border: 2px solid brown;
+        margin: 5% 0% 5% 0%;
+        padding: 5% 5% 5% 5%;
+        border-radius: 15%;
+        background-color: #f1f1f9;
+    }
+
+    #services .box img {
+        height: 180px;
+        margin: auto;
+        display: block;
+    }
+
+    #services .box p {
+        margin: 5px;
+    }
+
+    /* client section*/
+
+
+    #client-container {
+        padding: 1% 0% 0%;
+        display: block;
+        align-items: center;
+        width: 126%;
+    }
+
+    #client {
+        align-items: center;
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        overflow: overlay;
+    }
+
+    /*#client-container::before {
+        content: '';
+        background: linear-gradient(92deg, #1f9db3, rgb(237 184 184));
+        position: absolute;
+        width: 126%;
+        height: 81%;
+        z-index: -1;
+        opacity: 0.5;
+    }*/
+
+    #client-item {
+        align-items: center;
+        margin: 10% 0%;
+    }
+
+    /*Contact us*/
+    #contact-us {
+        display: block;
+        align-items: center;
+        height: 500px;
+        width: 126%;
+        margin: 2% 0% 0%;
+    }
+
+    #contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        margin-top: 10%;
+    }
+
+    /*#contact-us::before {
+        content: '';
+        background: linear-gradient(92deg, #1f9db3, rgb(237 184 184));
+        width: 126%;
+        height: 800px;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+    }*/
+
+    #contact-box input {
+        width: 100%;
+        height: 30px;
+    }
+
+    #contact-box textarea {
+        width: 100%;
+    }
+
+    #contact-box form {
+        width: 40%;
+        font-family: 'Bree Serif', serif;
+    }
+
+    h1.end.center {
+        margin-top: 20px;
+        font-size: 2rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 1% 0%;
+        width: 126%;
+        margin-top: 49%;
+    }
+
+    /*utility classes*/
+    hr.UL {
+        justify-content: center;
+        margin: 0% 40%;
+        animation: kartik 2s 1 1s;
+    }
+        @keyframes kartik {
+            0%{
+                margin: 0% 25%;
+            }
+            
+            100%{
+                margin: 0% 40%;
+            }
+        
+    }
+    /*.typewriter h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+       /* border-right: .15em solid orange; /* The typwriter cursor */
+        /*white-space: nowrap; /* Keeps the content on a single line */
+       /* margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+       /* letter-spacing: .15em; /* Adjust as needed */
+       /* animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      /*@keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+     /* @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+      }*/
+      .heading {
+        overflow: hidden;
+        border-right: black;
+        white-space: nowrap;
+        font-size: 2.8rem;
+        padding: 12px;
+        color: black;
+        animation: kartik3 3.5s steps(10,end);
+    }
+    @keyframes kartik3 {
+        0%{
+            width: 0%;
+        }
+        25%{
+            width: 25%;
+        }
+        50%{
+            width: 40%;
+        }
+        100%{
+            width: 56%;
+        }
+    }
+
+    .btn {
+        padding: 10px 10px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        margin: 20px 17px;
+        font-size: small;
+        border-radius: 60%;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:945px) and (max-width: 999px) {
+
+    /* navigation bar*/
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+    }
+
+    #navbar {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+    }
+
+    /* logo and image*/
+    #logo {
+        margin: 0px 10px;
+    }
+
+    #logo img {
+        height: 65px;
+        margin: 0px 7px;
+    }
+
+    #navbar ul {
+        display: flex;
+        color: black;
+        position: sticky;
+    }
+
+    #navbar::before {
+        content: '';
+        background-color: rgb(5, 3, 3);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        top: 0%;
+        bottom: 0%;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-style: 1.3rem;
+        font-family: 'Bree Serif', serif;
+        cursor: pointer;
+    }
+
+    #navbar ul li a {
+        display: block;
+        padding: 15px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    a {
+        color: white;
+    }
+
+    #navbar ul li a:hover {
+        color: grey;
+        background-color: white;
+    }
+
+    /* HOME SECTION*/
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 2% 13%;
+        justify-content: center;
+        align-items: center;
+        height: 430px;
+        width: 100%;
+        font-family: 'Bree Serif', serif;
+
+    }
+
+    #home hr{
+        animation: kartik1 3.5s 1;
+    }
+        @keyframes kartik1 {
+            0%{
+                width: 0%;
+            }
+            
+            100%{
+                width: 80%;
+            }
+        }
+
+    #home::before {
+        content: '';
+        background: url("../bg.jpg") no-repeat center center/cover;
+        position: absolute;
+        height: 95%;
+        width: 126%;
+        z-index: -1;
+        opacity: 0.8;
+        top: 0%;
+        bottom: 0%;
+        overflow: overlay;
+    }
+
+    /* Services Section*/
+
+    #services {
+        margin: 1% 5% 1% 3%;
+        display: flex;
+        font-family: 'Bree Serif', serif;
+        overflow: overlay;
+    }
+
+    #service-container {
+        width: 126%;
+        margin: 5% 0%;
+    }
+
+    #service-container::before {
+        content: '';
+        background-color: #af9595;
+        position: absolute;
+        width: 126%;
+        height: 95%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #services .box {
+        border: 2px solid brown;
+        margin: 0% 0% 0% 3%;
+        padding: 2%;
+        border-radius: 15%;
+        background-color: #f1f1f9;
+    }
+
+    #services .box img {
+        height: 180px;
+        margin: auto;
+        display: block;
+    }
+
+    #services .box p {
+        margin: 5px;
+    }
+
+    /* client section*/
+
+
+    #client-container {
+        padding: 1% 0% 0%;
+        display: block;
+        align-items: center;
+        width: 126%;
+    }
+
+    #client {
+        align-items: center;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        overflow: overlay;
+    }
+
+    #client-container::before {
+        content: '';
+        background: url(../Bg-1.jpg);
+        position: absolute;
+        width: 126%;
+        height: 65%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #client-item {
+        align-items: center;
+        margin: 3% 8%;
+    }
+
+    /*Contact us*/
+    #contact-us {
+        display: block;
+        align-items: center;
+        height: 800px;
+        width: 126%;
+        margin: 2% 0% 0%;
+    }
+
+    #contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        height: 555px;
+    }
+
+    #contact-us::before {
+        content: '';
+        background: url('../contact\ us.jpg') no-repeat center center/cover;
+        width: 126%;
+        height: 800px;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #contact-box input {
+        width: 100%;
+        height: 30px;
+    }
+
+    #contact-box textarea {
+        width: 100%;
+    }
+
+    #contact-box form {
+        width: 40%;
+        font-family: 'Bree Serif', serif;
+    }
+
+    h1.end.center {
+        margin-top: 20px;
+        font-size: 2rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 1% 0%;
+        width: 126%;
+    }
+
+    /*utility classes*/
+    hr.UL {
+        justify-content: center;
+        margin: 0% 40%;
+        animation: kartik 2s 1 1s;
+    }
+        @keyframes kartik {
+            0%{
+                margin: 0% 25%;
+            }
+            
+            100%{
+                margin: 0% 40%;
+            }
+        
+    }
+
+    .heading {
+        overflow: hidden;
+        border-right: black;
+        white-space: nowrap;
+        font-size: 2.8rem;
+        padding: 12px;
+        color: black;
+        animation: kartik3 3.5s steps(10,end);
+    }
+    @keyframes kartik3 {
+        0%{
+            width: 0%;
+        }
+        25%{
+            width: 25%;
+        }
+        50%{
+            width: 40%;
+        }
+        100%{
+            width: 50%;
+        }
+    }
+
+    .btn {
+        padding: 10px 10px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        margin: 20px 17px;
+        font-size: small;
+        border-radius: 60%;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1349px) {
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+    }
+
+    #navbar {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+    }
+
+    /* logo and image*/
+    #logo {
+        margin: 0px 10px;
+    }
+
+    #logo img {
+        height: 65px;
+        margin: 0px 7px;
+    }
+
+    #navbar ul {
+        display: flex;
+        color: black;
+        position: sticky;
+    }
+
+    #navbar::before {
+        content: '';
+        background-color: rgb(5, 3, 3);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        top: 0%;
+        bottom: 0%;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-style: 1.3rem;
+        font-family: 'Bree Serif', serif;
+        cursor: pointer;
+    }
+
+    #navbar ul li a {
+        display: block;
+        padding: 15px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    a {
+        color: white;
+    }
+
+    #navbar ul li a:hover {
+        color: grey;
+        background-color: white;
+    }
+
+    /* HOME SECTION*/
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 2% 13%;
+        justify-content: center;
+        align-items: center;
+        height: 430px;
+        width: 100%;
+        font-family: 'Bree Serif', serif;
+    }
+
+    #home hr{
+        animation: kartik1 3.5s 1;
+    }
+        @keyframes kartik1 {
+            0%{
+                width: 0%;
+            }
+            
+            100%{
+                width: 80%;
+            }
+        }
+
+    #home::before {
+        content: '';
+        background: url("../bg.jpg") no-repeat center center/cover;
+        position: absolute;
+        height: 95%;
+        width: 126%;
+        z-index: -1;
+        opacity: 0.8;
+        top: 0%;
+        bottom: 0%;
+    }
+
+
+    /* Services Section*/
+
+    #services {
+        margin: 1% 5% 1% 3%;
+        display: flex;
+        font-family: 'Bree Serif', serif;
+    }
+
+    #service-container {
+        width: 126%;
+        margin: 5% 0%;
+    }
+
+    #service-container::before {
+        content: '';
+        background-color: #af9595;
+        position: absolute;
+        width: 126%;
+        height: 95%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #services .box {
+        border: 2px solid brown;
+        margin: 0% 0% 0% 3%;
+        padding: 2%;
+        border-radius: 15%;
+        background-color: #f1f1f9;
+    }
+
+    #services .box img {
+        height: 180px;
+        margin: auto;
+        display: block;
+    }
+
+    #services .box p {
+        margin: 5px;
+    }
+
+    /* client section*/
+
+
+    #client-container {
+        padding: 1% 0% 0%;
+        display: block;
+        align-items: center;
+        width: 126%;
+    }
+
+    #client {
+        align-items: center;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #client-container::before {
+        content: '';
+        background: url(../Bg-1.jpg);
+        position: absolute;
+        width: 126%;
+        height: 65%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #client-item {
+        align-items: center;
+        margin: 3% 8%;
+    }
+
+    /*Contact us*/
+    #contact-us {
+        display: block;
+        align-items: center;
+        height: 500px;
+        width: 126%;
+        margin: 2% 0% 0%;
+    }
+
+    #contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    #contact-us::before {
+        content: '';
+        background: url('../contact\ us.jpg') no-repeat center center/cover;
+        width: 126%;
+        height: 500px;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #contact-box input {
+        width: 100%;
+        height: 30px;
+    }
+
+    #contact-box textarea {
+        width: 100%;
+    }
+
+    #contact-box form {
+        width: 40%;
+        font-family: 'Bree Serif', serif;
+    }
+
+    h1.end.center {
+        margin-top: 20px;
+        font-size: 2rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 1% 0%;
+        width: 126%;
+    }
+
+    /*utility classes*/
+    hr.UL {
+        justify-content: center;
+        margin: 0% 40%;
+        animation: kartik 2s 1 1s;
+    }
+        @keyframes kartik {
+            0%{
+                margin: 0% 25%;
+            }
+            
+            100%{
+                margin: 0% 40%;
+            }
+        
+    }
+    .heading {
+        overflow: hidden;
+        border-right: black;
+        white-space: nowrap;
+        font-size: 2.8rem;
+        padding: 12px;
+        color: black;
+        animation: kartik3 3.5s steps(10,end);
+    }
+    @keyframes kartik3 {
+        0%{
+            width: 0%;
+        }
+        25%{
+            width: 25%;
+        }
+        50%{
+            width: 40%;
+        }
+        100%{
+            width: 50%;
+        }
+    }
+
+    .btn {
+        padding: 10px 10px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        margin: 20px 17px;
+        font-size: small;
+        border-radius: 60%;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1350px) {
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+    }
+
+    #navbar {
+        position: fixed;
+        width: 100%;
+        height: 10%;
+    }
+
+    /* logo and image*/
+    #logo {
+        margin: 0px 10px;
+    }
+
+    #logo img {
+        height: 85px;
+        margin: 0px 7px;
+    }
+
+    #navbar ul {
+        display: flex;
+        color: black;
+        position: sticky;
+    }
+
+    #navbar::before {
+        content: '';
+        background-color: rgb(5, 3, 3);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        top: 0%;
+        bottom: 0%;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-style: 1.3rem;
+        font-family: 'Bree Serif', serif;
+        cursor: pointer;
+    }
+
+    #navbar ul li a {
+        display: block;
+        padding: 15px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    a {
+        color: white;
+    }
+
+    #navbar ul li a:hover {
+        color: grey;
+        background-color: white;
+    }
+
+    /* HOME SECTION*/
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 200px 35px 200px;
+        justify-content: center;
+        align-items: center;
+        height: 633px;
+        font-family: 'Bree Serif', serif;
+    }
+
+    #home hr{
+        animation: kartik1 3.5s 1;
+    }
+        @keyframes kartik1 {
+            0%{
+                width: 0%;
+            }
+            
+            100%{
+                width: 80%;
+            }
+        }
+
+    #home::before {
+        content: '';
+        background: url("../bg.jpg") no-repeat center center/cover;
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+        top: 0%;
+        bottom: 0%;
+    }
+
+    /* Services Section*/
+
+    #services {
+        margin: 1% 5% 1% 3%;
+        display: flex;
+        font-family: 'Bree Serif', serif;
+    }
+
+    #service-container::before {
+        content: '';
+        background-color: #af9595;
+        position: absolute;
+        width: 100%;
+        height: 475px;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #services .box {
+        border: 2px solid brown;
+        margin: 0% 0% 0% 3%;
+        padding: 2%;
+        border-radius: 15%;
+        background-color: #f1f1f9;
+    }
+
+    #services .box img {
+        height: 180px;
+        margin: auto;
+        display: block;
+    }
+
+    #services .box p {
+        margin: 5px;
+    }
+
+    /* client section*/
+
+
+    #client-container {
+        padding: 15px 0px 35px;
+        display: block;
+        align-items: center;
+
+    }
+
+    #client {
+        align-items: center;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #client-container::before {
+        content: '';
+        background: url(../Bg-1.jpg);
+        position: absolute;
+        width: 100%;
+        height: 316px;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #client-item {
+        align-items: center;
+        margin: 30px 168px;
+    }
+
+    /*Contact us*/
+    #contact-us {
+        display: block;
+        align-items: center;
+        height: 500px;
+    }
+
+    #contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    #contact-us::before {
+        content: '';
+        background: url('../contact\ us.jpg') no-repeat center center/cover;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    #contact-box input {
+        width: 100%;
+        height: 30px;
+    }
+
+    #contact-box textarea {
+        width: 100%;
+    }
+
+    #contact-box form {
+        width: 40%;
+        font-family: 'Bree Serif', serif;
+    }
+
+    h1.end.center {
+        margin-top: 20px;
+        font-size: 2rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+
+    /*utility classes*/
+    hr.UL {
+        justify-content: center;
+        margin: 0% 40%;
+        animation: kartik 2s 1 1s;
+    }
+        @keyframes kartik {
+            0%{
+                margin: 0% 25%;
+            }
+            
+            100%{
+                margin: 0% 40%;
+            }
+        
+    }
+
+    .heading {
+        overflow: hidden;
+        border-right: black;
+        white-space: nowrap;
+        font-size: 2.8rem;
+        padding: 12px;
+        color: black;
+        animation: kartik3 3.5s steps(10,end);
+    }
+    @keyframes kartik3 {
+        0%{
+            width: 0%;
+        }
+        25%{
+            width: 25%;
+        }
+        50%{
+            width: 40%;
+        }
+        100%{
+            width: 40%;
+        }
+    }
+
+    .btn {
+        padding: 10px 10px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        margin: 20px 17px;
+        font-size: small;
+        border-radius: 60%;
+        cursor: pointer;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+h1.h-primary.center {
+    font-family: 'Bree Serif', serif;
+}
